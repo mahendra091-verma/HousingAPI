@@ -1,15 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Housing API Management</title>
     <link rel="stylesheet" href="housing_design.css">
     <script src="housing_functionality.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="func.js"></script>
 </head>
+
 <body>
-    <h1>Housing API</h1>
-    <h1 class="on">Welcome to the Housing API</h1>
-    <p class="container">This is a simple Housing API.</p>
+
+    <header>
+        <h1>Housing API Management System</h1>
+        <p>Manage Housing Project Information</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Add House</a>
+        <a href="#">View Houses</a>
+        <a href="#">About</a>
+    </nav>
+
+    <main>
+
+        <section class="form-section">
+
+            <h2>Add Housing Details</h2>
+
+            <form>
+
+                <label>House ID</label>
+                <input type="text" placeholder="Enter House ID">
+
+                <label>Owner Name</label>
+                <input type="text" placeholder="Enter Owner Name">
+
+                <label>District</label>
+                <input type="text" placeholder="Enter District">
+
+                <label>House Area (Sq. Ft.)</label>
+                <input type="number" placeholder="Enter Area">
+
+                <label>Building Type</label>
+                <select>
+                    <option>Select Building Type</option>
+                    <option>Residential</option>
+                    <option>Commercial</option>
+                </select>
+
+                <label>House Status</label>
+                <select>
+                    <option>Select Status</option>
+                    <option>Completed</option>
+                    <option>Under Construction</option>
+                    <option>Incomplete</option>
+                </select>
+
+                <button type="submit">Submit Housing Details</button>
+
+            </form>
+
+        </section>
+
+        <section class="table-section">
+
+            <h2>Housing Records</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>House ID</th>
+                        <th>Owner</th>
+                        <th>District</th>
+                        <th>Area</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>H001</td>
+                        <td>Rahul Kumar</td>
+                        <td>Hyderabad</td>
+                        <td>1200</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>H002</td>
+                        <td>Ramesh</td>
+                        <td>Warangal</td>
+                        <td>1500</td>
+                        <td>Incomplete</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Housing API Management System | 2026</p>
+    </footer>
+
 </body>
 </html>
